@@ -1,0 +1,12 @@
+.nav-bar {
+    background-color: cornflowerblue;
+    height: 70px;
+}
+
+.nav-link {
+    color: white;
+    margin-right: 15px;
+    background: #ee7752;
+    border-radius: 5px;
+  
+}
