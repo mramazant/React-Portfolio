@@ -20,6 +20,7 @@
 }
 
 .about-me {
+    position:static;
     margin-right: 15px;
     background: #ee7752;
     border-radius: 5px;
@@ -34,5 +35,5 @@
     margin-left: 25%;
     margin-right: 150px;
     float: right;
-    margin-top: -65%;
+    /* margin-top: -65%; */
 }
