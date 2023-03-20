@@ -1,9 +1,9 @@
 import "./index.css";
 import { Link } from "react-router-dom";
-const Nav = () => {
+const Header = () => {
   return (
     <header className="header">
-      <h3>Muhammet Ramazan TOKLU</h3>
+      <h3 class="heading">Muhammet Ramazan TOKLU</h3>
       <nav className="nav-items">
       <Link className="nav-link" to={{ pathname: `/` }}>
         About Me
@@ -22,4 +22,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Header;

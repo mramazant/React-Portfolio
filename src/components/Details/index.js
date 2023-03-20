@@ -71,21 +71,26 @@ const Education =()=>{
     </section>
   )
 } 
+
+const Resume=()=>{
+  return (
+    <section className="resume">
+      <form method="get" action={resume}>
+        <button type="submit" className="btn">Download Resume!</button>
+      </form>
+    </section>
+)
+}
 const Details = () => {
   return (
     <div className="details" id="details">
-      {/* <div className="aside">
-        <Skills />
-      </div> */}
-      <div className="main">
+      {/* <div className="details-content"> */}
         <About />
         <Education/>
         
         {/* resume will be here when its ready */}
-        <form method="get" action={resume}>
-          <button type="submit">Download Resume!</button>
-        </form>
-      </div>
+        <Resume />
+      {/* </div> */}
     </div>
   );
 };

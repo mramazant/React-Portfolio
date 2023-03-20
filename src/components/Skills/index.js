@@ -8,8 +8,8 @@ let skills = {
       {skill:"Visual Studio C#", level:5},
       {skill:"Microsoft Office", level:5},
       {skill:"Solidworks", level:5},
-      {skill:"HTML5", level:5},
-      {skill:"CSS3", level:5},
+      {skill:"HTML5", level:4},
+      {skill:"CSS3", level:3},
       {skill:"JavaScript", level:5},
       {skill:"jQuery", level:5},
       {skill:"Express.js", level:5},
@@ -32,10 +32,16 @@ let skills = {
       {skill:"English", level:5},
     ]
 }
-const Skill = ({skill, level})=>{
+const Skill = ({skill})=>{
+    let proficiency = ""
+    for(let i = 0; i<5; i++){
+        // <div class="proficiency">★★★★★</div>
+        proficiency+=i<skill.level?"★":"☆"
+    }
     return (
         <div className="skill">
-        <div>{skill}</div>
+            <div>{skill.skill}</div>
+            <div class="proficiency">{proficiency}</div>
         </div>
     )
 }
@@ -45,7 +51,7 @@ const SkillsContainer=({skills, header})=>{
         <article className="skills-container">
             <h4>{header}</h4>
             <div className="skill-list">
-                {skills.map((skill, index)=>(<Skill key={index} skill={skill.skill}/>))}
+                {skills.map((skill, index)=>(<Skill key={index} skill={skill} />))}
             </div>
         </article>
     )
@@ -59,8 +65,6 @@ const Skills = ()=>{
                 <SkillsContainer skills={skills.technical} header="Technical Skills"/>
                 <SkillsContainer skills={skills.soft} header="Soft Skills"/>
             </div>
-            {/* {skills.technical.map((skill)=>(<Skill skill={skill.skill}/>))}
-            {skills.soft.map((skill)=>(<Skill skill={skill.skill}/>))} */}
         </section>
     )
 }
