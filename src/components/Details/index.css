@@ -52,6 +52,7 @@
     background-color: var(--primary-hover);
     flex: 1 1 50%;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 50%);
 
 }
 
@@ -61,4 +62,16 @@
 }
 .resume{
     padding:10px 0;
+}
+
+@media only screen and (max-width:760px){
+    .courses{
+        flex-direction: column;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .profile-pic{
+        width: 100%;
+    }
 }
