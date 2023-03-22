@@ -1,12 +1,12 @@
 
 :root{
   --blue:rgba(100,149,237,1);
-  --blue-hover: rgba(145, 184, 255, 0.5);
+  --blue-hover: rgba(145, 184, 255, 30%);
   --blue-gradient:rgb(30, 55, 95);
 
 
   --orange:rgb(238, 118, 82, 1);
-  --orange-hover:rgb(255, 154, 123,0.5);
+  --orange-hover:rgb(255, 154, 123,30%);
   --orange-gradient:rgb(95, 55, 30);
 
 
