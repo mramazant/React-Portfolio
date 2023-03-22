@@ -84,13 +84,10 @@ const Resume=()=>{
 const Details = () => {
   return (
     <div className="details" id="details">
-      {/* <div className="details-content"> */}
         <About />
         <Education/>
-        
         {/* resume will be here when its ready */}
         <Resume />
-      {/* </div> */}
     </div>
   );
 };
