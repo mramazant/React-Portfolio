@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const MenuIcon = ({menuOpen, toggleMenu})=>{
   
   return(
-    <div className="container" onClick={()=>{toggleMenu()}}>
+    <div className="close" onClick={()=>{toggleMenu()}}>
       <div className={`bar1 ${menuOpen?"opened":""}`}></div>
       <div className={`bar2 ${menuOpen?"opened":""}`}></div>
       <div className={`bar3 ${menuOpen?"opened":""}`}></div>

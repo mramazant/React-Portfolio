@@ -1,8 +1,46 @@
-.workCard {
+.work-section{
     display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        position: relative;
-        margin-left: 50px;
-        margin-right: 50px;
+    flex-direction: column;
+    gap: 10px;
+}
+.work-container{
+    background-color: var(--primary-hover);
+    flex: 1 1 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+}
+
+.project-link{
+    flex: 1 1 40%;
+    text-decoration: none;
+    cursor: pointer;
+    /* padding: ; */
+    box-sizing: border-box;
+}
+.project-description{
+    flex: 1 1 60%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.project-title{
+    flex: 1 1 100%;
+}
+
+@media only screen and (max-width:760px) {
+    .work-container{
+        flex-direction: column;
+    }
+    .project-link{
+        flex: 1 1 100%;
+    }
+    .project-description{
+        flex: 1 1 100%;
+        padding: 0;
+    }
 }
