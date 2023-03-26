@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Work from "./components/Work";
@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Router>
-      <Nav />
+      <Header />
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/work" element={<Work />} />

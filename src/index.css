@@ -1,3 +1,11 @@
+:root{
+  --blue: rgba(100, 149, 237, 1);
+  --blue-hover: rgba(145, 184, 255, 30%);
+  --primary: var(--blue);  
+  --primary-hover: var(--blue-hover);
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
