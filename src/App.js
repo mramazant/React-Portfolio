@@ -1,19 +1,24 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./components/About";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import AboutPage from "./pages/AboutPage";
+import SkillsPage from "./pages/SkillsPage";
+import WorkPage from "./pages/WorkPage";
+import Footer from "./components/Footer";
+import ContactPage from "./pages/ContactPage";
 function App() {
   return (
     <Router>
-      <Nav />
+      <Header />
+      <main className="main">
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/work" element={<WorkPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      </main>
+      <Footer />
     </Router>
     // <div className="App">
     //   <header className="App-header">

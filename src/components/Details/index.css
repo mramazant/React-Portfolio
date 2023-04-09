@@ -1,0 +1,77 @@
+.aside {
+    width: 20%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    border: 1px;
+    flex-direction: column;
+    border-color: black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-style: groove;
+    float: left;
+    margin-right: 25px;
+    
+}
+
+.profilPic {
+    margin-left: 25px;
+    display: inline;
+    float: left;
+}
+
+.about-me {
+    display: flex;
+}
+
+/* .main { */
+    /* position: relative; */
+    /* flex-wrap: wrap; */
+    /* display: inline; */
+    /* margin-left: 25%; */
+    /* margin-right: 150px; */
+    /* float: right; */
+    /* margin-top: -65%; */
+/* } */
+.profile-pic{
+    width:400px ;
+}
+
+.about-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details{
+    /* padding: 10px; */
+}
+
+.course-container{
+    background-color: var(--primary-hover);
+    flex: 1 1 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 50%);
+
+}
+
+.courses{
+    display: flex;
+    gap: 10px;
+}
+.resume{
+    padding:10px 0;
+}
+
+@media only screen and (max-width:760px){
+    .courses{
+        flex-direction: column;
+    }
+    .about-me{
+        flex-direction: column;
+    }
+    .profile-pic{
+        width: 100%;
+    }
+}
