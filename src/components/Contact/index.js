@@ -1,5 +1,21 @@
 import { useState } from "react";
 import "./index.css";
+
+let socials = [
+  {name:"LinkedIn",icon:"fa-linkedin" ,link:""},
+  {name:"Instagram",icon:"fa-instagram" ,link:""},
+  // {name:"LinkedIn",icon:"" ,link:""},
+  // {name:"LinkedIn",icon:"" ,link:""},
+]
+const SocialSection =()=>{
+  return (
+      <article className="social-container">
+        {socials.map((social)=>{
+          return <a className="social-link" href={social.link} target="_blank" rel="noreferrer"><i className={`fa ${social.icon} fa-xl`} aria-hidden="true"></i><p>{social.name}</p></a>
+        })}
+      </article>
+  );
+}
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -67,6 +83,8 @@ const Contact = () => {
           Submit
         </a>
       </article>
+      <h3>Socials</h3>
+      <SocialSection />
     </section>
   );
 };
