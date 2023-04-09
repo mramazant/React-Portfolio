@@ -28,7 +28,7 @@ const education = [
 const ProfileImage = ({ link, image, description, title, width }) => {
   return (
     <div>
-      <a href={link} className="cal" target="_blank" title={title}>
+      <a href={link} className="cal" target="_blank" rel="noreferrer" title={title}>
         <img src={image} className="profile-pic" alt={title} />
         {description}
       </a>

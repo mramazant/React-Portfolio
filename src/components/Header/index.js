@@ -1,6 +1,6 @@
 import "./index.css";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const MenuIcon = ({menuOpen, toggleMenu})=>{
   

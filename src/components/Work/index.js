@@ -27,7 +27,7 @@ const Project = ({ link, image, description, title }) => {
   return (
     <div className="work-container">
         <h4 className="project-title">{title}</h4>
-      <a href={link} className="project-link" target="_blank" title={title}>
+      <a href={link} className="project-link" target="_blank" rel="noreferrer" title={title}>
         <img src={image} width="100%" alt={title} />
       </a>
       <p className="project-description">
